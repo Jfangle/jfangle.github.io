@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            My Site
-        </title>
-    </head>
-    <body>
-        <h1>
-            this is my github pages website
-        </h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jangleverse</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #000;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .warp-speed {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            height: 1px;
+            width: 1px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: -42vw -4vh 0px 0px #fff,25vw -41vh 0px 0px #fff,-20vw 49vh 0px 1px #fff,5vw 40vh 1px 1px #fff,29vw 19vh 1px 0px #fff,-44vw -13vh 0px 0px #fff,46vw 41vh 0px 1px #fff,-3vw -45vh 0px 1px #fff,47vw 35vh 1px 0px #fff,12vw -8vh 1px 0px #fff,-34vw 48vh 1px 1px #fff,32vw 26vh 1px 1px #fff,32vw -41vh 1px 1px #fff,0vw 37vh 1px 1px #fff,34vw -26vh 1px 0px #fff,-14vw -49vh 1px 0px #fff,-12vw 45vh 0px 1px #fff,-44vw -33vh 0px 1px #fff,-13vw 41vh 0px 0px #fff,-36vw -11vh 0px 1px #fff,-23vw -24vh 1px 0px #fff,-38vw -27vh 0px 1px #fff,16vw -19vh 0px 0px #fff,28vw 33vh 1px 0px #fff,-49vw -4vh 0px 0px #fff,16vw 32vh 0px 1px #fff,36vw -18vh 1px 0px #fff,-25vw -30vh 1px 0px #fff,-23vw 24vh 0px 1px #fff,-2vw -35vh 1px 1px #fff,-25vw 9vh 0px 0px #fff,-15vw -34vh 0px 0px #fff,-8vw -19vh 1px 0px #fff,-20vw -20vh 1px 1px #fff,42vw 50vh 0px 1px #fff,-32vw 10vh 1px 0px #fff,-23vw -17vh 0px 0px #fff,44vw 15vh 1px 0px #fff,-40vw 33vh 1px 1px #fff,-43vw 8vh 0px 0px #fff,-48vw -15vh 1px 1px #fff,-24vw 17vh 0px 0px #fff,-31vw 50vh 1px 0px #fff,36vw -38vh 0px 1px #fff,-7vw 48vh 0px 0px #fff,15vw -32vh 0px 0px #fff,29vw -41vh 0px 0px #fff,2vw 37vh 1px 0px #fff,7vw -40vh 1px 1px #fff,15vw 18vh 0px 0px #fff,25vw -13vh 1px 1px #fff,-46vw -12vh 1px 1px #fff,-18vw 22vh 0px 0px #fff,23vw -9vh 1px 0px #fff,50vw 12vh 0px 1px #fff,45vw 2vh 0px 0px #fff;
+            animation: zoom 16s alternate infinite;
+        }
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            background-color: rgba(30, 30, 30, 0.9);  /* Increased opacity for better readability */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        .headshot {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #00ff00;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #00ff00, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .link {
+            background-color: rgba(0, 255, 0, 0.1);
+            color: #00ff00;
+            text-decoration: none;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .link:hover {
+            background-color: rgba(0, 255, 0, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="warp-speed"></div>
+    <div class="container">
+        <img src="llama.png" alt="llama" class="headshot">
+        <h1>The Jangleverse</h1>
+        <p>Cypherpunk | Faza Enjoyer | Parth Maximalist</p>
+        <div class="links">
+            <a href="https://defijangle.substack.com" class="link" target="_blank">Substack</a>
+            <a href="https://www.youtube.com/@JangleOnchain" class="link" target="_blank">YouTube</a>
+            <a href="https://github.com/jfangle" class="link" target="_blank">GitHub</a>
+            <a href="https://x.com/defi_jangle" class="link" target="_blank">Twitter</a>
+        </div>
+    </div>
+</body>
+
 </html>
